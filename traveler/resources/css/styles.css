@@ -1,0 +1,46 @@
+.profile-container {
+    padding: 1rem;
+}
+
+.profile-header {
+    font-size: 1.5rem;
+    color: #333; /* Цвет текста */
+}
+
+.profile-details {
+    margin-top: 1rem;
+}
+
+.profile-details-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+}
+
+.profile-details-label {
+    font-weight: 500;
+    width: 6rem;
+    color: #333; /* Цвет текста */
+}
+
+.profile-details-value {
+    margin-left: 1rem;
+    color: #666; /* Цвет текста */
+}
+
+.logout-container {
+    margin-top: 1.5rem;
+}
+
+.logout-button {
+    padding: 0.5rem 1rem;
+    background-color: #ff5252; /* Цвет фона кнопки */
+    color: #fff; /* Цвет текста кнопки */
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.logout-button:hover {
+    background-color: #ff4040; /* Цвет фона кнопки при наведении */
+}

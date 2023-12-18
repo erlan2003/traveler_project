@@ -11,10 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('attraction_types', function (Blueprint $table) {
-            $table->id();
-            $table->string('attraction_type');
-            $table->timestamps();
+        Schema::table('attractions', function (Blueprint $table) {
+            //
+             $table->string('photo')->nullable();
         });
     }
 
@@ -23,6 +22,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('attraction_types');
+        Schema::table('attractions', function (Blueprint $table) {
+            //
+        });
     }
 };

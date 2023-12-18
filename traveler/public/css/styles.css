@@ -1,0 +1,79 @@
+.site-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.page-title {
+    text-align: center;
+    color: #333;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.custom-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    margin: 0 10px 20px; /* Added margin between cards */
+    width: 280px; /* Fixed card width */
+    height: 450px; /* Fixed card height */
+}
+
+.custom-card:hover {
+    transform: scale(1.03);
+}
+
+.card-image {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    justify-content: center; /* Center vertically */
+    padding: 1rem; /* Added padding for better spacing */
+}
+
+.card-heading {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-align: center; /* Center horizontally */
+}
+
+.card-description {
+    color: #333;
+    margin-bottom: 0.5rem;
+    text-align: center; /* Center horizontally */
+}
+
+.custom-btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    display: inline-block;
+    transition: background-color 0.3s;
+    text-align: center; /* Center horizontally */
+}
+
+.custom-btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.center-text {
+    text-align: center;
+    color: #777;
+    margin-top: 1rem;
+}

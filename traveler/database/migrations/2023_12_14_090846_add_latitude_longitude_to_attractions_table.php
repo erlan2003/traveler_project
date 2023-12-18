@@ -11,10 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('tours_types', function (Blueprint $table) {
-            $table->id();
-            $table->string('tours_type');
-            $table->timestamps();
+        Schema::table('attractions', function (Blueprint $table) {
+            //
+            $table->decimal('latitude', 10, 7)->nullable();
+            $table->decimal('longitude', 10, 7)->nullable();
         });
     }
 
@@ -23,6 +23,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('tours_types');
+        Schema::table('attractions', function (Blueprint $table) {
+            //
+        });
     }
 };
